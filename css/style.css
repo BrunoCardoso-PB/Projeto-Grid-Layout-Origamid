@@ -193,11 +193,9 @@ img{
 }
 @media only screen and (max-width:560px){
     .lobo2{
-        width: 200px;
+        width: 240px;
     }
-    .lobo1{
-        width: 150px;
-    }
+   
     body p{
         font-size: 1em;
     }
@@ -286,6 +284,15 @@ p{
     margin-right: 30px;
 }
 
+@media only screen and (max-width: 530px){
+    .caracteristicas{
+        width: 200px;
+    }
+    .caracteristica-1, .caracteristica-2{
+        width: 80px;
+    }
+}
+
 /*************************/
 .destaque{
     font-size: 1em;
@@ -341,5 +348,5 @@ p{
 .footer p{
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 30px;   
 }
