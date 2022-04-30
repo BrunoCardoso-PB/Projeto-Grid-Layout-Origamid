@@ -175,9 +175,17 @@ img{
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
+
+@media(max-width: 600px){
+    .content{
+        grid-template-columns: auto;
+    }
+}
+
 .col-wide {
     grid-column: span 2;
 }
+
 
 .lobo1{
     grid-row: span 2;
@@ -185,6 +193,17 @@ img{
 }
 .lobo1{
     align-self: end;
+}
+.lobo3{
+    justify-self: center;
+}
+@media(max-width:560px){
+    .col-wide img{
+        width: 450px;
+    }
+    .lobo3{
+        justify-self: start;
+    }
 }
 
 /* estilos content */
@@ -295,7 +314,8 @@ p{
     display: grid;
     align-content: start;
     padding: 30px;
-    gap: 30px
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
 }
 
 /* footer */
