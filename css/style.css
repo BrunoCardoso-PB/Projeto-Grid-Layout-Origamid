@@ -139,7 +139,7 @@ img{
     }
 }
 
-@media(max-width: 760px){
+@media only screen and (max-width: 760px){
     .sidenav ul{
         display: flex;
     }
@@ -191,9 +191,22 @@ img{
     grid-row: span 2;
     align-self: end;
 }
-.lobo1{
-    align-self: end;
+@media only screen and (max-width:560px){
+    .lobo2{
+        width: 200px;
+    }
+    .lobo1{
+        width: 150px;
+    }
+    body p{
+        font-size: 1em;
+    }
+    .citacao.col-wide{
+        width: 350px;
+    }
+
 }
+
 .lobo3{
     justify-self: center;
 }
